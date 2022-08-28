@@ -15,4 +15,11 @@ node {
     stage('Deploy') {
         echo 'Deploying....'
     }
+
+ post { 
+        always { 
+            cleanWs()
+        }
+    }
+
 }
