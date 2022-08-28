@@ -16,10 +16,5 @@ node {
         echo 'Deploying....'
     }
 
- post { 
-        always { 
-            cleanWs()
-        }
-    }
 
 }
