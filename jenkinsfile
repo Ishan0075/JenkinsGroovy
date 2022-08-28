@@ -6,7 +6,6 @@ node {
     stage('Build') {
         echo 'Building....'
 		bat 'dotnet --version'
-		bat 'dotnet restore --force'
 		bat 'dotnet build ConsoleApp1'
 		echo 'Build new feature'
     }
